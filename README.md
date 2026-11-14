@@ -1,4 +1,4 @@
-# NearAir ("AirNEAR") — Air-Gapped Zero-Hardware Cold Storage for NEAR Protocol
+# NEAR Air Gapped Privacy Wallet —  Zero Hardware Cold Storage for NEAR Protocol
 
 **NearAir** is an open-source, zero-cost, strictly air-gapped cold storage signing system for the **NEAR Protocol**. It turns any spare offline Android smartphone into a hardware-backed Ed25519 cryptographic signing enclave (`cold-storage`) that communicates with an online companion wallet (`public-wallet` / web client) strictly via optical QR codes.
 
