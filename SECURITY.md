@@ -1,4 +1,4 @@
-# NearAir Security & Defense Architecture
+# NEAR Air Gapped Wallet Architecture
 ### Official Submission for NEAR Hackathon Track 06: AI Security & Defense (`security`)
 > *"Trust, but verify. Build spending limits, policy engines, sandboxed wallets, reputation and scam detection. Give AI money without handing it the keys to everything."*
 
