@@ -1,0 +1,13 @@
+{
+  "name": "nearair-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "NearAir (AirNEAR) — Open-source, zero-cost, air-gapped cold storage signing system for NEAR Protocol",
+  "scripts": {
+    "dev:watcher": "npm --prefix apps/watcher run dev",
+    "build:watcher": "npm --prefix apps/watcher run build",
+    "test:watcher": "npm --prefix apps/watcher test",
+    "test:vault": "cd apps/vault && gradle testDebugUnitTest"
+  }
+}
+
