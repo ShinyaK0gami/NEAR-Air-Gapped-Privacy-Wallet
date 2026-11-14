@@ -563,8 +563,12 @@ export default function NearAirOfflineVaultDevicePage({
         <div className="bg-[#121721] border border-white/10 rounded-3xl p-6 shadow-2xl relative space-y-5">
           {/* Top Enclave Indicator Bar */}
           <div className="flex items-center justify-between pb-3 border-b border-white/10">
-            <div className="flex items-center gap-2">
-              <span className="w-2.5 h-2.5 rounded-full bg-[#00EC97] shadow-[0_0_8px_#00EC97]" />
+            <div className="flex items-center gap-2.5">
+              <img
+                src="/icon.jpg"
+                alt="NearAir Enclave"
+                className="w-7 h-7 rounded-lg object-cover border border-[#00EC97]/40 shadow-sm shadow-[#00EC97]/20"
+              />
               <span className="text-xs font-mono font-bold text-white uppercase tracking-wider">
                 NEAR Cold Wallet
               </span>

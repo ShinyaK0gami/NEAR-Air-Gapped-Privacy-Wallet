@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <radialGradient id="bgGlow" cx="50%" cy="50%" r="65%">
+      <stop offset="0%" stop-color="#141E28"/>
+      <stop offset="60%" stop-color="#0A0D14"/>
+      <stop offset="100%" stop-color="#05070A"/>
+    </radialGradient>
+
+    <!-- Neon Green/Cyan Gradient -->
+    <linearGradient id="nearGreenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00FFA3"/>
+      <stop offset="50%" stop-color="#00EC97"/>
+      <stop offset="100%" stop-color="#00C480"/>
+    </linearGradient>
+
+    <!-- Cyan Air-Gap Pulse Gradient -->
+    <linearGradient id="cyanAirGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00E5FF"/>
+      <stop offset="100%" stop-color="#00EC97"/>
+    </linearGradient>
+
+    <!-- Shield Border Gradient -->
+    <linearGradient id="shieldBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00EC97" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#00E5FF" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#00EC97" stop-opacity="0.1"/>
+    </linearGradient>
+
+    <!-- Glow Filters -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <filter id="intenseGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="22" result="blur2"/>
+      <feComposite in="SourceGraphic" in2="blur2" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Dark Rounded App Icon Base -->
+  <rect width="512" height="512" rx="115" fill="url(#bgGlow)"/>
+  
+  <!-- Outer Subtle Tech Ring / Air-Gap Signal Arcs -->
+  <g opacity="0.35" stroke="#00EC97" stroke-width="2.5" fill="none">
+    <circle cx="256" cy="256" r="215" stroke-dasharray="14 18"/>
+    <circle cx="256" cy="256" r="185" stroke-dasharray="40 25 8 25" opacity="0.5"/>
+  </g>
+
+  <!-- Cryptographic Outer Shield Hexagon -->
+  <path d="M 256 65 
+           L 395 130 
+           L 395 285 
+           C 395 375, 256 445, 256 445 
+           C 256 445, 117 375, 117 285 
+           L 117 130 Z" 
+        fill="#0E1420" 
+        fill-opacity="0.75" 
+        stroke="url(#shieldBorder)" 
+        stroke-width="5" 
+        stroke-linejoin="round"/>
+
+  <!-- Optical QR Air-Gap Corner Brackets -->
+  <g stroke="#00EC97" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" opacity="0.85">
+    <!-- Top-Left -->
+    <path d="M 165 190 L 165 165 L 190 165" />
+    <rect x="175" y="175" width="8" height="8" fill="#00EC97"/>
+
+    <!-- Top-Right -->
+    <path d="M 347 190 L 347 165 L 322 165" />
+    <rect x="329" y="175" width="8" height="8" fill="#00EC97"/>
+
+    <!-- Bottom-Left -->
+    <path d="M 165 315 L 165 340 L 190 340" />
+    <rect x="175" y="324" width="8" height="8" fill="#00EC97"/>
+
+    <!-- Bottom-Right -->
+    <path d="M 347 315 L 347 340 L 322 340" />
+    <rect x="329" y="324" width="8" height="8" fill="#00EC97"/>
+  </g>
+
+  <!-- Glowing Air-Gap Transmission Pulse Rings -->
+  <path d="M 220 148 C 232 144, 244 142, 256 142 C 268 142, 280 144, 292 148" 
+        fill="none" stroke="#00E5FF" stroke-width="4" stroke-linecap="round" opacity="0.8" filter="url(#glow)"/>
+  <path d="M 235 125 C 242 123, 249 122, 256 122 C 263 122, 270 123, 277 125" 
+        fill="none" stroke="#00EC97" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- Core Icon: The NearAir Geometric "N" Cold Vault Anchor -->
+  <!-- Left Pillar with Tapered Cut -->
+  <path d="M 195 335 L 195 190 C 195 178, 206 172, 218 180 L 232 190 L 232 335 Z" 
+        fill="url(#nearGreenGrad)" 
+        filter="url(#glow)"/>
+
+  <!-- Right Pillar with Sleek Vault Bevel -->
+  <path d="M 317 175 L 317 320 C 317 332, 306 338, 294 330 L 280 320 L 280 175 Z" 
+        fill="url(#nearGreenGrad)" 
+        filter="url(#glow)"/>
+
+  <!-- High-Energy Cybernetic Diagonal Cross-Beam (Air-Gap Bridge) -->
+  <path d="M 205 186 
+           L 307 318 
+           C 314 326, 317 322, 317 312 
+           L 317 296 
+           L 215 164 
+           C 208 156, 205 160, 205 170 Z" 
+        fill="url(#cyanAirGrad)" 
+        filter="url(#intenseGlow)"/>
+
+  <!-- Central Enclave Core Gem / Lock Node -->
+  <circle cx="256" cy="252" r="16" fill="#0A0D14" stroke="#00FFA3" stroke-width="4.5" filter="url(#glow)"/>
+  <circle cx="256" cy="252" r="6" fill="#00E5FF"/>
+
+  <!-- Bottom Verification Shield Accent -->
+  <path d="M 244 380 L 256 392 L 278 370" 
+        fill="none" stroke="#00EC97" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"/>
+</svg>

@@ -830,11 +830,13 @@ export default function NearAirWatchOnlyWalletPage({
   const renderTopSwitcherBar = () => (
     <div className="w-full bg-[#0E121A] border-b border-white/5 py-2.5 px-4 sticky top-0 z-40 backdrop-blur-md">
       <div className="max-w-4xl mx-auto flex items-center justify-between">
-        <div className="flex items-center gap-2">
-          <div className="w-7 h-7 rounded-lg bg-[#00EC97] text-black font-black flex items-center justify-center text-xs shadow-md">
-            N
-          </div>
-          <span className="font-bold text-sm tracking-tight text-white flex items-center gap-1.5">
+        <div className="flex items-center gap-2.5">
+          <img
+            src="/icon.jpg"
+            alt="NearAir Logo"
+            className="w-8 h-8 rounded-xl object-cover border border-[#00EC97]/40 shadow-md shadow-[#00EC97]/20"
+          />
+          <span className="font-extrabold text-base tracking-tight text-white flex items-center gap-1.5">
             NearAir <span className="text-[#00EC97]">Wallet</span>
           </span>
         </div>
